@@ -52,7 +52,7 @@ function getBasePath() {
   var basePath = ''
 
   if (process.env.ENV !== 'DEV') {
-    return '/trips-nextjs'
+    return '/trips'
   }
 
   console.log('getBasePath() : basePath = ' + basePath)
