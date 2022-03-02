@@ -48,17 +48,7 @@ const securityHeaders = [
   },
 ]
 
-function getBasePath() {
-  var basePath = ''
-
-  if (process.env.ENV !== 'DEV') {
-    return '/trips'
-  }
-
-  console.log('getBasePath() : basePath = ' + basePath)
-
-  return basePath
-}
+const basePath = process.env.NODE_ENV === 'production' ? '/trips-nextjs' : ''
 
 const withPlugins = require('next-compose-plugins')
 const BundleAnalyzer = require('@next/bundle-analyzer')
@@ -71,10 +61,10 @@ module.exports = withPlugins([
     },
   ],
   {
-    basePath: getBasePath(),
-    assetPrefix: getBasePath() + '/',
+    basePath,
+    assetPrefix: `${basePath}/`,
     publicRuntimeConfig: {
-      basePath: getBasePath(),
+      basePath: basePath,
     },
     reactStrictMode: true,
     pageExtensions: ['js', 'jsx', 'md', 'mdx'],
