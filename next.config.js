@@ -48,7 +48,7 @@ const securityHeaders = [
   },
 ]
 
-const basePath = process.env.NODE_ENV !== 'production' ? '/trips-nextjs' : ''
+const basePath = process.env.NODE_ENV === 'production' ? '/trips-nextjs' : ''
 
 const withPlugins = require('next-compose-plugins')
 const BundleAnalyzer = require('@next/bundle-analyzer')
