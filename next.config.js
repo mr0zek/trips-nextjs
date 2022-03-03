@@ -1,7 +1,3 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
-
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
@@ -52,36 +48,54 @@ const securityHeaders = [
   },
 ]
 
-module.exports = withBundleAnalyzer({
-  reactStrictMode: true,
-  pageExtensions: ['js', 'jsx', 'md', 'mdx'],
-  eslint: {
-    dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
-  },
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: securityHeaders,
-      },
-    ]
-  },
-  webpack: (config, { dev, isServer }) => {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    })
+const basePath = process.env.ENV === 'production' ? '/trips-nextjs' : ''
 
-    if (!dev && !isServer) {
-      // Replace React with Preact only in client production build
-      Object.assign(config.resolve.alias, {
-        'react/jsx-runtime.js': 'preact/compat/jsx-runtime',
-        react: 'preact/compat',
-        'react-dom/test-utils': 'preact/test-utils',
-        'react-dom': 'preact/compat',
+const withPlugins = require('next-compose-plugins')
+const BundleAnalyzer = require('@next/bundle-analyzer')
+
+module.exports = withPlugins([
+  [
+    BundleAnalyzer,
+    {
+      enabled: process.env.ANALYZE === 'true',
+    },
+  ],
+  {
+    basePath: basePath,
+    assetPrefix: `${basePath}/`,
+    publicRuntimeConfig: {
+      basePath: basePath,
+    },
+    reactStrictMode: true,
+    pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+    eslint: {
+      dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
+    },
+    async headers() {
+      return [
+        {
+          source: '/(.*)',
+          headers: securityHeaders,
+        },
+      ]
+    },
+    webpack: (config, { dev, isServer }) => {
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
       })
-    }
 
-    return config
+      if (!dev && !isServer) {
+        // Replace React with Preact only in client production build
+        Object.assign(config.resolve.alias, {
+          'react/jsx-runtime.js': 'preact/compat/jsx-runtime',
+          react: 'preact/compat',
+          'react-dom/test-utils': 'preact/test-utils',
+          'react-dom': 'preact/compat',
+        })
+      }
+
+      return config
+    },
   },
-})
+])
