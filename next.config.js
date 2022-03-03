@@ -62,6 +62,7 @@ module.exports = withPlugins([
   ],
   {
     basePath: basePath,
+    assetPrefix: `${basePath}/`,
     publicRuntimeConfig: {
       basePath: basePath,
     },
