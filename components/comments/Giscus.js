@@ -18,6 +18,7 @@ const Giscus = ({ mapping }) => {
   const LoadComments = useCallback(() => {
     setEnabledLoadComments(false)
 
+    /* eslint-disable no-unsafe-optional-chaining */
     const { repo, repositoryId, category, categoryId, reactions, metadata, inputPosition, lang } =
       siteMetadata?.comment?.giscusConfig
 

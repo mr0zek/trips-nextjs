@@ -64,8 +64,7 @@ module.exports = withPlugins([
     content: ['./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'],
     plugins: [
       require('tw-elements/dist/plugin')
-    ],
-    basePath: basePath,
+    ], basePath: basePath,
     assetPrefix: `${basePath}/`,
     publicRuntimeConfig: {
       basePath: basePath,
