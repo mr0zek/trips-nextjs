@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Next.js Starter Blog</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>A blog created with Next.js and Tailwind.css</description>
+      <language>en-us</language>
+      <managingEditor>address@yoursite.com (Tails Azimuth)</managingEditor>
+      <webMaster>address@yoursite.com (Tails Azimuth)</webMaster>
+      <lastBuildDate>Sat, 12 Jun 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/polska/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/2021-06-12 - Mazury</guid>
+    <title>Mazury</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/2021-06-12 - Mazury</link>
+    <description>Trip date : 2021-06-12 - 2021-06-19, visited countries : Polska, distance : 939</description>
+    <pubDate>Sat, 12 Jun 2021 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Tails Azimuth)</author>
+    <category>Polska</category>
+  </item>
+
+    </channel>
+  </rss>

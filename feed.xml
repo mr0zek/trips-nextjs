@@ -21,6 +21,26 @@
   </item>
 
   <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/slowenia</guid>
+    <title>Slovenia</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/slowenia</link>
+    null
+    <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Tails Azimuth)</author>
+    <category>markdown</category><category>code</category><category>features</category>
+  </item>
+
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/2021-06-12 - Mazury</guid>
+    <title>Mazury</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/2021-06-12 - Mazury</link>
+    <description>Trip date : 2021-06-12 - 2021-06-19, visited countries : Polska, distance : 939</description>
+    <pubDate>Sat, 12 Jun 2021 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Tails Azimuth)</author>
+    <category>Polska</category>
+  </item>
+
+  <item>
     <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/nested-route/introducing-multi-part-posts-with-nested-routing</guid>
     <title>Introducing Multi-part Posts with Nested Routing</title>
     <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/nested-route/introducing-multi-part-posts-with-nested-routing</link>
