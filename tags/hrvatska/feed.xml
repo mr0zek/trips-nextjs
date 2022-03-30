@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Next.js Starter Blog</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>A blog created with Next.js and Tailwind.css</description>
+      <language>en-us</language>
+      <managingEditor>address@yoursite.com (Tails Azimuth)</managingEditor>
+      <webMaster>address@yoursite.com (Tails Azimuth)</webMaster>
+      <lastBuildDate>Wed, 09 Aug 2017 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/hrvatska/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/2017-08-09 - Chorwacja</guid>
+    <title>Chorwacja</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/2017-08-09 - Chorwacja</link>
+    <description>Trip date : 2017-08-09 - 2017-08-19, visited countries : Polska,Česko,Österreich,Hrvatska,Slovenija, distance : 2775</description>
+    <pubDate>Wed, 09 Aug 2017 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Tails Azimuth)</author>
+    <category>Polska</category><category>Česko</category><category>Österreich</category><category>Hrvatska</category><category>Slovenija</category>
+  </item>
+
+    </channel>
+  </rss>

@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Next.js Starter Blog</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>A blog created with Next.js and Tailwind.css</description>
+      <language>en-us</language>
+      <managingEditor>address@yoursite.com (Tails Azimuth)</managingEditor>
+      <webMaster>address@yoursite.com (Tails Azimuth)</webMaster>
+      <lastBuildDate>Tue, 07 Jun 2016 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/deutschland/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/2016-06-07 - NDC Oslo</guid>
+    <title>NDC Oslo</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/2016-06-07 - NDC Oslo</link>
+    <description>Trip date : 2016-06-07 - 2016-06-10, visited countries : Deutschland,Norge,Polska, distance : 2416</description>
+    <pubDate>Tue, 07 Jun 2016 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Tails Azimuth)</author>
+    <category>Deutschland</category><category>Norge</category><category>Polska</category>
+  </item>
+
+    </channel>
+  </rss>
